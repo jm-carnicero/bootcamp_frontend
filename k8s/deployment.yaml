@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: team2-final-frontend
+  name: team2-nextjs-frontend
   labels:
-    app: team2-final-frontend
+    app: team2-nextjs-frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: team2-final-frontend
+      app: team2-nextjs-frontend
   template:
     metadata:
       labels:
-        app: team2-final-frontend
+        app: team2-nextjs-frontend
     spec:
       containers:
       - name: nextjs
