@@ -7,7 +7,7 @@ spec:
   - apiVersion: tekton.dev/v1beta1
     kind: PipelineRun
     metadata:
-      generateName: team2-nextjs-frontend
+      generateName: team2-nextjs-frontend-
     spec:
       params:
       - name: app-name
@@ -18,7 +18,7 @@ spec:
         value: "quay.io/mhillb/team2-nextjs-frontend"
       pipelineRef:
         name: team2-nextjs-frontend
-      serviceAccountName: build-robot
+      serviceAccountName: build-bot
       workspaces:
       - name: pipeline-shared-data
         volumeClaimTemplate:
@@ -36,7 +36,6 @@ spec:
             resources:
               requests:
                 storage: 1Gi
-      - name: git-credentials-frontend
+      - name: git-credentials
         secret:
           secretName: git-credentials-frontend
-
