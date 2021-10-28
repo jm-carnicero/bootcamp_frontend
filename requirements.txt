@@ -3,3 +3,4 @@ bcrypt
 markdown
 psycopg2
 tornado
+requests
