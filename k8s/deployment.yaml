@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: team2-final-frontend
+  labels:
+    app: team2-final-frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: team2-final-frontend
+  template:
+    metadata:
+      labels:
+        app: team2-final-frontend
+    spec:
+      containers:
+      - name: nextjs
+        image: quay.io/mhillb/placeholder_image:placeholder_tag
+        ports:
+        - containerPort: 3000
