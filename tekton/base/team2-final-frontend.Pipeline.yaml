@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: team2-final-frontend
+  name: team2-nextjs-frontend
 spec:
   params:
   - name: app-name

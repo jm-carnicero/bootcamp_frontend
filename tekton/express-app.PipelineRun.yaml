@@ -1,18 +1,18 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: team2-final-frontend-
+  generateName: team2-nextjs-frontend-
 spec:
   params:
   - name: app-name
-    value: "team2-final-frontend"
+    value: "team2-nextjs-frontend"
   - name: source-repo
     value: "https://github.com/jm-carnicero/bootcamp_frontend"
   - name: image-repo
-    value: "quay.io/mhillb/team2-final-frontend"
+    value: "quay.io/mhillb/team2-nextjs-frontend"
   pipelineRef:
-    name: team2-final-frontend
-  serviceAccountName: build-robot
+    name: team2-nextjs-frontend
+  serviceAccountName: build-bot
   workspaces:
   - name: pipeline-shared-data
     volumeClaimTemplate:
