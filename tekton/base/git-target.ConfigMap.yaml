@@ -6,6 +6,6 @@ data:
   protocol: https
   host: github.com
   org: jm-carnicero
-  repo: bootcamp_frontend
+  repo: git-ops
   branch: main
   
