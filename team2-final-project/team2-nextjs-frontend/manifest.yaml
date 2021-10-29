@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b248b4237e7e3254ea019b48ff65265222770ddb
+    app.openshift.io/vcs-ref: 0fa704f771e969b23ecb9cf659809f348b948834
     app.openshift.io/vcs-uri: https://github.com/jm-carnicero/bootcamp_frontend
   labels:
     app.kubernetes.io/instance: team2-nextjs-frontend
@@ -22,7 +22,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b248b4237e7e3254ea019b48ff65265222770ddb
+    app.openshift.io/vcs-ref: 0fa704f771e969b23ecb9cf659809f348b948834
     app.openshift.io/vcs-uri: https://github.com/jm-carnicero/bootcamp_frontend
   labels:
     app: team2-nextjs-frontend
@@ -39,7 +39,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: b248b4237e7e3254ea019b48ff65265222770ddb
+        app.openshift.io/vcs-ref: 0fa704f771e969b23ecb9cf659809f348b948834
         app.openshift.io/vcs-uri: https://github.com/jm-carnicero/bootcamp_frontend
       labels:
         app: team2-nextjs-frontend
@@ -47,7 +47,7 @@ spec:
         app.kubernetes.io/name: team2-nextjs-frontend
     spec:
       containers:
-      - image: quay.io/mhillb/team2-nextjs-frontend:b248b4237e7e3254ea019b48ff65265222770ddb
+      - image: quay.io/mhillb/team2-nextjs-frontend:0fa704f771e969b23ecb9cf659809f348b948834
         name: nextjs
         ports:
         - containerPort: 8888
@@ -56,7 +56,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b248b4237e7e3254ea019b48ff65265222770ddb
+    app.openshift.io/vcs-ref: 0fa704f771e969b23ecb9cf659809f348b948834
     app.openshift.io/vcs-uri: https://github.com/jm-carnicero/bootcamp_frontend
   labels:
     app.kubernetes.io/instance: team2-nextjs-frontend
